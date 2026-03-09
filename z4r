@@ -1,10 +1,17 @@
 #!/bin/sh
 
-BRANCH="master"
-RAW_URL="https://raw.githubusercontent.com/IndeecFOX/zapret4rocket/${BRANCH}"
-API_URL="https://api.github.com/repos/IndeecFOX/zapret4rocket/contents/lib?ref=${BRANCH}"
+BOOTSTRAP_OWNER="kostazol"
+BOOTSTRAP_REPO="z4r"
+BOOTSTRAP_REF="main"
+
+Z4R_OWNER="kostazol"
+Z4R_REPO="zapret4rocket"
+Z4R_REF="add_keenetic_policy_support"
+
+RAW_URL="https://raw.githubusercontent.com/${Z4R_OWNER}/${Z4R_REPO}/${Z4R_REF}"
+API_URL="https://api.github.com/repos/${Z4R_OWNER}/${Z4R_REPO}/contents/lib?ref=${Z4R_REF}"
 INSTALL_DIR="/opt"
-INSTALLER_URL="https://raw.githubusercontent.com/IndeecFOX/z4r/main/z4r"
+INSTALLER_URL="https://raw.githubusercontent.com/${BOOTSTRAP_OWNER}/${BOOTSTRAP_REPO}/${BOOTSTRAP_REF}/z4r"
 LIB_FILES_FALLBACK="ui.sh provider.sh telemetry.sh recommendations.sh netcheck.sh premium.sh strategies.sh submenus.sh actions.sh"
 
 # Определение пути для команды z4r
