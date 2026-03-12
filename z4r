@@ -6,7 +6,7 @@ BOOTSTRAP_REF="main"
 
 Z4R_OWNER="kostazol"
 Z4R_REPO="zapret4rocket"
-Z4R_REF="add_keenetic_policy_support"
+Z4R_REF="fix_z4r_start"
 
 RAW_URL="https://raw.githubusercontent.com/${Z4R_OWNER}/${Z4R_REPO}/${Z4R_REF}"
 API_URL="https://api.github.com/repos/${Z4R_OWNER}/${Z4R_REPO}/contents/lib?ref=${Z4R_REF}"
